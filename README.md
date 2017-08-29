@@ -23,7 +23,6 @@ console.log(converted) // Returned text as string without any carriage returns (
 
 Omittable options object with following allowable parameters:
 
-* `native` (Boolean) - Force use of native module (cannot be used with write: false).
 * `feedback` (Boolean) - Display feedback (*"File already has UNIX line endings..."*).
 * `writable` (Boolean) - Write change to file rather than return as string.
 
