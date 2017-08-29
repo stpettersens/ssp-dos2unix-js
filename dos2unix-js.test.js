@@ -7,10 +7,23 @@
 
 const dos2unix = require('./dos2unix-js').dos2unix
 const assert = require('chai').assert
-// const fs = require('fs')
 const _exec = require('child_process').exec
+const os = require('os')
+const fs = require('fs')
 
 let sources = ['dos2unix-js.js', 'dos2unix-js.test.js']
+
+function toDosLineEndings (contents) {
+  let ucontents = []
+  for (let i = 0; i < contents.length; i++) {
+    if (contents.charAt(i) === '\n') {
+      ucontents.push('\r\n')
+    } else {
+      ucontents.push(contents.charAt(i))
+    }
+  }
+  fs.writeFileSync(sources[0], ucontents.join(''))
+}
 
 function checkLineEndings (data) {
   let passed = true
@@ -38,6 +51,9 @@ describe('Test dos2unix:', function () {
   })
 
   it('Use dos2unix pure JS implementation without writing.', function (done) {
+    if (os.platform() !== 'win32') {
+      toDosLineEndings(fs.readFileSync(sources[0]).toString())
+    }
     let converted = dos2unix(sources[0], {feedback: true})
     let passed = checkLineEndings(converted)
     assert.equal(passed, true)
