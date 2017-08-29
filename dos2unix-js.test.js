@@ -7,10 +7,10 @@
 
 const dos2unix = require('./dos2unix-js').dos2unix
 const assert = require('chai').assert
-const fs = require('fs')
+// const fs = require('fs')
 const _exec = require('child_process').exec
 
-let sources = ['dos2unix.js', 'dos2unix.test.js']
+let sources = ['dos2unix-js.js', 'dos2unix-js.test.js']
 
 function checkLineEndings (data) {
   let passed = true

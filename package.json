@@ -4,7 +4,7 @@
   "description": "dos2unix implementation in pure JS (equiv to ssp-dos2unix)",
   "main": "dos2unix-js.js",
   "scripts": {
-    "test": "mocha dos2unix.test.js --timeout 100000"
+    "test": "mocha dos2unix-js.test.js --timeout 100000"
   },
   "repository": {
     "type": "git",

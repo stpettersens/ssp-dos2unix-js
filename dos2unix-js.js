@@ -21,15 +21,15 @@ function isAscii (contents) {
   return ascii
 }
 
-function isDOS_eol (contents) {
-  let dos_eol = false
+function isDOSeol (contents) {
+  let doseol = false
   for (let i = 0; i < contents.length; i++) {
     if (contents.charAt(i) === '\r') {
-      dos_eol = true
+      doseol = true
       break
     }
   }
-  return dos_eol
+  return doseol
 }
 
 function toUnixLineEndings (contents) {
@@ -52,10 +52,9 @@ module.exports.dos2unix = function (filename, options) {
   if (options && options.write !== undefined) {
     write = options.write
   }
-  
   let message = 'dos2unix: File already has UNIX line endings or is binary.'
   let contents = fs.readFileSync(filename, 'utf8').toString()
-  if (isAscii(contents) && isDOS_eol(contents)) {
+  if (isAscii(contents) && isDOSeol(contents)) {
     let converted = toUnixLineEndings(contents)
     if (write) {
       fs.writeFileSync(filename, converted, 'utf8', 'wb')
