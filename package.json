@@ -1,0 +1,29 @@
+{
+  "name": "ssp-dos2unix-js",
+  "version": "1.0.0",
+  "description": "dos2unix implementation in pure JS (equiv to ssp-dos2unix)",
+  "main": "dos2unix-js.js",
+  "scripts": {
+    "test": "mocha dos2unix.test.js --timeout 100000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stpettersens/ssp-dos2unix-js.git"
+  },
+  "keywords": [
+    "dos2unix",
+    "line",
+    "endings"
+  ],
+  "author": "Sam Saint-Pettersen <s.stpettersen+github@gmail.com>",
+  "license": "MIT",
+  "gypfile": true,
+  "bugs": {
+    "url": "https://github.com/stpettersens/ssp-dos2unix/issues"
+  },
+  "homepage": "https://github.com/stpettersens/ssp-dos2unix#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0"
+  }
+}
