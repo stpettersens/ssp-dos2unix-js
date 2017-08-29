@@ -17,7 +17,6 @@
   ],
   "author": "Sam Saint-Pettersen <s.stpettersen+github@gmail.com>",
   "license": "MIT",
-  "gypfile": true,
   "bugs": {
     "url": "https://github.com/stpettersens/ssp-dos2unix/issues"
   },
