@@ -38,7 +38,7 @@ describe('Test dos2unix:', function () {
   })
 
   it('Use dos2unix pure JS implementation without writing.', function (done) {
-    let converted = dos2unix(sources[0], {native: false, feedback: true})
+    let converted = dos2unix(sources[0], {feedback: true})
     let passed = checkLineEndings(converted)
     assert.equal(passed, true)
     done()

@@ -1,7 +1,7 @@
 {
   "name": "ssp-dos2unix-js",
   "version": "1.0.0",
-  "description": "dos2unix implementation in pure JS (equiv to ssp-dos2unix)",
+  "description": "dos2unix implementation in pure JS",
   "main": "dos2unix-js.js",
   "scripts": {
     "test": "mocha dos2unix-js.test.js --timeout 100000"
