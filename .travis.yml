@@ -3,7 +3,9 @@ notifications:
 
 sudo: required
 language: node_js
-node_js: 4.2
+node_js: 
+  - 4.2
+  - 7.4
 
 before_install:
   - npm install -g mocha

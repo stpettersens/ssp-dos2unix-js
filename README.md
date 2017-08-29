@@ -1,9 +1,9 @@
 ### ssp-dos2unix
 > :end: A dos2unix implementation in pure JS.
 
-[![Build Status](https://travis-ci.org/stpettersens/ssp-dos2unix.png?branch=master)](https://travis-ci.org/stpettersens/ssp-dos2unix)
+[![Build Status](https://travis-ci.org/stpettersens/ssp-dos2unix-js.png?branch=master)](https://travis-ci.org/stpettersens/ssp-dos2unix-js)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
-[![npm version](https://badge.fury.io/js/ssp-dos2unix.svg)](http://npmjs.com/package/ssp-dos2unix)
+[![npm version](https://badge.fury.io/js/ssp-dos2unix-js.svg)](http://npmjs.com/package/ssp-dos2unix-js)
 
 ##### Install:
 
