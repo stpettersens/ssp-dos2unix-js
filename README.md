@@ -14,7 +14,7 @@
 'use strict'
 const dos2unix = require('dos2unix-js').dos2unix
 
-let converted = dos2unix('README.md', {native: false, feedback: true, writable: false})
+let converted = dos2unix('README.md', {feedback: true, writable: false})
 console.log(converted) // Returned text as string without any carriage returns (\r).
 // If you use writable as true, returns 0 instead of text.
 ```
